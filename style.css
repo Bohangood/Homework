@@ -1,0 +1,100 @@
+body{
+    margin: 0;
+}
+.content {
+    padding: 10px;
+    
+}
+.burger{
+    background-image: url(burger.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    
+    padding: 10px;
+    min-height:200px;
+
+    position: relative;
+    
+}
+.menu{
+    display: grid;
+    gap: 10px;
+    margin-top: 10px;
+}
+.food{
+    background-image: url(sushi.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    padding: 10px;
+    min-height: 90px;
+    position: relative;
+}
+.food2{
+    background-image: url(rajcata.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+    min-height: 90px;
+    position: relative;
+}
+.menu2{
+    display: grid;
+    gap: 10px;
+    margin-top: 10px;
+}
+.food3{
+    background-image: url(grilovani.jpg);
+    background-size: cover;
+    background-position: center;
+
+    padding: 10px;
+    min-height: 90px;
+    position: relative;
+}
+.food4{
+    background-image: url(kure.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+
+    padding: 10px;
+    min-height: 90px;
+    position: relative;
+}
+@media (min-width: 600px) {
+    .content {
+      padding: 20px;
+    }
+  
+    .burger {
+      min-height: 250px;
+    }
+    .food, .food2, .food3, .food4 {
+      min-height: 150px;
+    }
+  
+    .menu {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .menu2 {
+        grid-template-columns: repeat(2, 1fr);
+      }
+  }
+  
+  @media (min-width: 1024px) {
+    .burger {
+      min-height: 400px;
+    }
+  
+    .food, .food2, .food3, .food4 {
+      min-height: 200px;
+    }
+
+    .menu {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
